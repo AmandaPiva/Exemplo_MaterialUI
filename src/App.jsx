@@ -4,6 +4,7 @@ import { Box, Button } from '@mui/material'
 import { TextField } from '@mui/material'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Components/Login/Login'
+import Header from './Components/Header/Header';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/header" element={<Header />}></Route>
         </Routes>
       </Router>
     </>
